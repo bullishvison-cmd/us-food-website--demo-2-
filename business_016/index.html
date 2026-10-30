@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tacos El Tote — St. Elmo Taco Truck, Chattanooga, TN</title>
+<meta name="description" content="Concept homepage for Tacos El Tote, a taco truck in the St. Elmo neighborhood of Chattanooga, Tennessee.">
+<meta property="og:title" content="Tacos El Tote — Chattanooga, TN">
+<meta property="og:description" content="Concept homepage for Tacos El Tote, a taco truck in the St. Elmo neighborhood of Chattanooga, Tennessee.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23C63D1F'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23FFF8EC' font-family='Georgia'%3ET%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFF8EC;--ink:#1E1A17;--chili:#C63D1F;--mustard:#E9A13B;--line:#1E1A17}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
+a{color:inherit}.topbar{background:var(--ink);color:var(--cream);text-align:center;font-size:13px;letter-spacing:.08em;padding:10px 16px}
+header{border-bottom:3px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;gap:16px;flex-wrap:wrap}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:28px;letter-spacing:-.02em}.brand span{color:var(--chili)}
+nav{display:flex;gap:24px;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase}nav a{text-decoration:none}
+.btn{display:inline-block;background:var(--chili);color:#fff;text-decoration:none;font-weight:800;padding:14px 26px;border:2px solid var(--line);box-shadow:5px 5px 0 var(--line)}
+.btn.ghost{background:var(--cream);color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:0;border-bottom:3px solid var(--line)}
+.hero-copy{padding:56px 5vw 48px}.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--chili)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(56px,7.5vw,88px);line-height:.95;letter-spacing:-.03em;margin:16px 0}
+h1 em{color:var(--chili);font-style:normal}.lede{font-size:19px;max-width:34rem}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero-img{position:relative;overflow:hidden;border-left:3px solid var(--line);min-height:420px}
+.hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;top:24px;left:24px;background:var(--mustard);border:2px solid var(--line);padding:10px 16px;font-weight:800;font-size:14px;transform:rotate(-3deg)}
+.marquee{background:var(--chili);color:#fff;overflow:hidden;border-bottom:3px solid var(--line);padding:12px 0;font-weight:800;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.marquee span{display:inline-block;padding-right:48px}
+section{padding:64px 5vw}h2{font-family:Fraunces,Georgia,serif;font-size:clamp(40px,4.5vw,56px);line-height:1.05;letter-spacing:-.02em;margin:0 0 12px}
+.sec-note{color:#5c534a;max-width:40rem;margin:0 0 32px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:0;border:3px solid var(--line)}
+.menu article{padding:28px;border-bottom:3px solid var(--line)}.menu article:nth-child(odd){border-right:3px solid var(--line)}
+.menu h3{font-family:Fraunces,Georgia,serif;font-size:26px;margin:0 0 6px}.menu p{margin:0;color:#4a4238}
+.menu .tag{display:inline-block;background:var(--mustard);border:2px solid var(--line);font-size:12px;font-weight:800;letter-spacing:.08em;padding:2px 8px;margin-bottom:10px}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.visit-card{border:3px solid var(--line);padding:28px;background:#fff}
+.visit-card h3{font-family:Fraunces,Georgia,serif;font-size:28px;margin:0 0 12px}
+.alert{border:3px solid var(--chili);background:#FDEEE8;padding:20px 24px}
+.alert strong{color:var(--chili)}
+figure{margin:0}figure img{width:100%;height:340px;object-fit:cover;display:block;border:3px solid var(--line)}
+figcaption{font-size:13px;color:#5c534a;padding:8px 0}
+footer{border-top:3px solid var(--line);background:var(--ink);color:var(--cream);padding:40px 5vw;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:var(--cream)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:768px){.hero{grid-template-columns:1fr}.hero-img{border-left:none;border-top:3px solid var(--line);min-height:300px}.menu{grid-template-columns:1fr}.menu article:nth-child(odd){border-right:none}.visit{grid-template-columns:1fr}nav{gap:14px}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="topbar">Website concept demo — not the official website</div>
+<header>
+<div class="brand">TACOS <span>EL TOTE</span></div>
+<nav><a href="#menu">Menu</a><a href="#visit">Visit</a><a href="tel:+14238344295">Call</a></nav>
+</header>
+<main>
+<section class="hero" style="padding:0">
+<div class="hero-copy">
+<p class="eyebrow">St. Elmo &middot; Chattanooga, Tennessee</p>
+<h1>Birria, done the <em>truck way.</em></h1>
+<p class="lede">Tacos El Tote is a taco truck in Chattanooga&rsquo;s St. Elmo neighborhood, known in local listings for quesabirria tacos and a loyal lunchtime crowd. Simple food, made to order, from a truck — not a dining room.</p>
+<div class="cta-row">
+<a class="btn" href="tel:+14238344295">Call (423) 834-4295</a>
+<a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Tacos%20El%20Tote%2C%205601%20St%20Elmo%20Ave%2C%20Chattanooga%2C%20TN%2037409">Get Directions</a>
+</div>
+</div>
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Tacos with lime and fresh toppings on a plate">
+<div class="badge">Food truck &middot; St. Elmo</div>
+</div>
+</section>
+<div class="marquee" aria-hidden="true"><span>Quesabirria tacos &middot; Breakfast burritos &middot; Mexican street corn &middot; Birria quesadilla &middot; </span><span>Quesabirria tacos &middot; Breakfast burritos &middot; Mexican street corn &middot; Birria quesadilla &middot; </span></div>
+<section id="menu" class="reveal">
+<h2>What visitors talk about</h2>
+<p class="sec-note">Menu items below are dishes visitors mention in reviews and listings for Tacos El Tote. The truck&rsquo;s menu can change, so call ahead to confirm what is on today.</p>
+<div class="menu">
+<article><span class="tag">Visitor-reported</span><h3>Quesabirria Tacos</h3><p>Corn tortilla, birria meat and mozzarella, served with a dipping sauce made from birria broth, cilantro and onions.</p></article>
+<article><span class="tag">Visitor-reported</span><h3>Birria Tacos with Consomm&eacute;</h3><p>Birria tacos served with consomm&eacute; for dipping, as described in visitor listings.</p></article>
+<article><span class="tag">Visitor-reported</span><h3>Birria Quesadilla</h3><p>A quesadilla built around birria, mentioned by visitors alongside the tacos.</p></article>
+<article><span class="tag">Visitor-reported</span><h3>Breakfast Burritos</h3><p>Morning burritos, including versions with chorizo, mentioned in visitor listings.</p></article>
+<article><span class="tag">Visitor-reported</span><h3>Regular Burritos</h3><p>Burritos with chorizo, as described in visitor listings for the truck.</p></article>
+<article><span class="tag">Visitor-reported</span><h3>Mexican Street Corn</h3><p>Street corn, mentioned by visitors as a side worth ordering with the tacos.</p></article>
+</div>
+</section>
+<section id="visit" class="reveal">
+<div class="visit">
+<div>
+<h2>Find the truck</h2>
+<p>5601 St Elmo Ave<br>Chattanooga, TN 37409</p>
+<p><a href="tel:+14238344295">Phone: (423) 834-4295</a><br><a href="mailto:ttacoseltote@gmail.com">Email: ttacoseltote@gmail.com</a><br><a href="https://www.facebook.com/tacoseltotechattanooga">Facebook: Tacos El Tote Chattanooga</a></p>
+<figure>
+<img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" alt="Tacos served with dipping sauce">
+<figcaption>Photos shown are illustrative stock images, not photos of this business.</figcaption>
+</figure>
+</div>
+<div>
+<div class="visit-card">
+<h3>Hours — please read</h3>
+<p>Listings disagree about this truck&rsquo;s hours, so hours are shown exactly as the listings report them:</p>
+<ul>
+<li><strong>ThreeBestRated:</strong> Mon&ndash;Thu 9am&ndash;7pm; Fri&ndash;Sun closed.</li>
+<li><strong>Restaurantji:</strong> Mon&ndash;Fri 9am&ndash;7pm; Sat&ndash;Sun closed.</li>
+</ul>
+<p>One listing also notes last orders typically around 8pm. Because the truck&rsquo;s schedule can change, please call ahead before visiting.</p>
+</div>
+<div class="alert" style="margin-top:24px">
+<strong>Heads-up for visitors:</strong> Tacos El Tote is a food truck, so its exact serving spot can vary. Check the truck&rsquo;s Facebook page or call before you head over.
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div><strong>Tacos El Tote</strong><br>5601 St Elmo Ave, Chattanooga, TN 37409<br><a href="tel:+14238344295">(423) 834-4295</a> &middot; <a href="mailto:ttacoseltote@gmail.com">ttacoseltote@gmail.com</a></div>
+<div>Website concept demo — not the official website<br>Photos shown are illustrative stock images, not photos of this business.</div>
+</footer>
+<script>
+(function(){
+var els=document.querySelectorAll('.reveal');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
