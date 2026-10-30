@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10th Street Diner — Plant-Based Diner in Indianapolis | Website Concept Demo</title>
+<meta name="description" content="Website concept demo for 10th Street Diner, a family-owned plant-based diner on East 10th Street in Indianapolis.">
+<meta property="og:title" content="10th Street Diner — Indianapolis">
+<meta property="og:description" content="Website concept demo for a family-owned plant-based diner in Indianapolis.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23C93A2E'/><text x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23FAF6EF' text-anchor='middle'>10</text></svg>">
+<style>
+:root{--paper:#FAF6EF;--ink:#1E1B16;--accent:#C93A2E;--leaf:#2E5B3E;--line:#E3D9C6;--muted:#6E6557;--r:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);font-size:17px;line-height:1.65}
+a{color:inherit}
+.disclaimer{background:var(--ink);color:var(--paper);text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.08em;padding:10px 16px}
+header{border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:0 auto;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-size:22px;font-weight:700;letter-spacing:.02em}
+.brand span{color:var(--accent)}
+.navlinks{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;display:flex;gap:24px;flex-wrap:wrap}
+.navlinks a{text-decoration:none}
+.cta{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:#fff;text-decoration:none;padding:12px 20px;border-radius:999px}
+.hero{max-width:1180px;margin:0 auto;padding:64px 24px 48px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:end}
+.kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+h1{font-size:clamp(48px,7vw,84px);line-height:1.02;letter-spacing:-.02em}
+h1 em{color:var(--leaf);font-style:italic}
+.lede{font-size:clamp(18px,2vw,22px);line-height:1.6;color:#3D382E;margin-top:24px}
+.hero-meta{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:28px}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{font-family:Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:.06em;text-decoration:none;padding:14px 22px;border-radius:999px;border:1.5px solid var(--ink);display:inline-block}
+.btn.solid{background:var(--ink);color:var(--paper)}
+figure{margin:0}
+figure img{width:100%;height:100%;object-fit:cover;display:block;border-radius:var(--r)}
+.hero-img{aspect-ratio:4/5}
+figcaption{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:var(--muted);padding:8px 2px 0}
+.rule{border:none;border-top:1px solid var(--line);margin:0}
+.section{max-width:1180px;margin:0 auto;padding:64px 24px}
+.section h2{font-size:clamp(36px,4.5vw,54px);line-height:1.1;letter-spacing:-.01em;margin-bottom:16px}
+.section .intro{max-width:640px;color:#3D382E}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;margin-top:40px;border-top:1px solid var(--line)}
+.dish{padding:28px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:56px 1fr;gap:20px}
+.num{font-size:15px;color:var(--accent);font-family:Arial,Helvetica,sans-serif}
+.dish h3{font-size:22px;line-height:1.25}
+.dish p{color:var(--muted);font-size:16px;margin-top:6px}
+.note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--muted);margin-top:24px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.gallery figure{aspect-ratio:4/3}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.visit address{font-style:normal;font-size:19px;line-height:1.7}
+.visit .hours-note{background:#F1EAD9;border-left:4px solid var(--accent);padding:20px 24px;font-size:16px}
+footer{background:var(--ink);color:var(--paper)}
+.foot{max-width:1180px;margin:0 auto;padding:48px 24px;display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.foot p{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#CFC6B2;max-width:420px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:768px){.hero,.menu,.gallery,.visit{grid-template-columns:1fr}.hero{padding-top:40px}.hero-img{aspect-ratio:4/3}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="disclaimer">Website concept demo — not the official website</div>
+<header>
+  <div class="nav">
+    <div class="brand">10th Street <span>Diner</span></div>
+    <nav class="navlinks" aria-label="Main"><a href="#menu">Menu favourites</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav>
+    <a class="cta" href="tel:+13177371161">Call the diner</a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="reveal">
+      <p class="kicker">Family-owned since 2019 · Indianapolis, Indiana</p>
+      <h1>Comfort food, <em>entirely</em> plant-based.</h1>
+      <p class="lede">A neighbourhood diner on East 10th Street serving the classics you crave — stacked sandwiches, loaded fries and hearty plates — made without animal products, and made to satisfy everyone at the table.</p>
+      <p class="hero-meta">3301 East 10th Street · Indianapolis, IN 46201</p>
+      <div class="btnrow">
+        <a class="btn solid" href="tel:+13177371161">Call (317) 737-1161</a>
+        <a class="btn" href="mailto:tenthstreetdiner@yahoo.com">Email the diner</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=10th%20Street%20Diner%203301%20East%2010th%20Street%2C%20Indianapolis%2C%20IN%2046201" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <figure class="reveal">
+      <div class="hero-img"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1600&q=80" alt="Illustrative stock photo of a stacked burger"></div>
+      <figcaption>Photos shown are illustrative stock images, not photos of this business.</figcaption>
+    </figure>
+  </section>
+  <hr class="rule">
+  <section class="section reveal" id="menu">
+    <h2>Visitor favourites</h2>
+    <p class="intro">Dishes visitors mention most often when they talk about 10th Street Diner. Ask in store about the full menu and daily specials.</p>
+    <div class="menu">
+      <article class="dish"><span class="num">01</span><div><h3>Crunchwrap Supreme</h3><p>A visitor favourite — the diner's take on a loaded, crunchy wrapped classic.</p></div></article>
+      <article class="dish"><span class="num">02</span><div><h3>Buffalo Chicken Sandwich</h3><p>Spicy, saucy and stacked — the sandwich visitors keep coming back for.</p></div></article>
+      <article class="dish"><span class="num">03</span><div><h3>Seitan Sub</h3><p>A hearty, savoury sub built around seasoned seitan.</p></div></article>
+      <article class="dish"><span class="num">04</span><div><h3>Chili Cheese Fries</h3><p>Loaded fries topped with chili and melted cheese — a diner staple.</p></div></article>
+    </div>
+    <p class="note">Menu items are dishes reported by visitors. No prices are shown here — please call the diner for current pricing.</p>
+  </section>
+  <section class="section reveal">
+    <h2>From the counter</h2>
+    <div class="gallery">
+      <figure><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1600&q=80" alt="Illustrative stock photo of a fresh savoury bowl"><figcaption>Photos shown are illustrative stock images, not photos of this business.</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1600&q=80" alt="Illustrative stock photo of a breakfast plate"><figcaption>Photos shown are illustrative stock images, not photos of this business.</figcaption></figure>
+    </div>
+  </section>
+  <section class="section visit reveal" id="visit">
+    <div>
+      <h2>Visit us</h2>
+      <address>10th Street Diner<br>3301 East 10th Street<br>Indianapolis, IN 46201<br><a href="tel:+13177371161">(317) 737-1161</a><br><a href="mailto:tenthstreetdiner@yahoo.com">tenthstreetdiner@yahoo.com</a></address>
+      <div class="btnrow">
+        <a class="btn solid" href="https://www.google.com/maps/search/?api=1&query=10th%20Street%20Diner%203301%20East%2010th%20Street%2C%20Indianapolis%2C%20IN%2046201" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <div class="hours-note" id="contact">
+      <strong>Hours</strong><br>
+      Published hours for this diner conflict across listings, so no hours are shown as verified here. Please call <a href="tel:+13177371161">(317) 737-1161</a> to confirm today's hours before visiting.
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="foot">
+    <div><strong>10th Street Diner</strong><p>Family-owned plant-based diner in Indianapolis, Indiana.</p></div>
+    <p>Website concept demo — not the official website. Photos shown are illustrative stock images, not photos of this business.</p>
+  </div>
+</footer>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return;}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});els.forEach(function(e){io.observe(e);});})();
+</script>
+</body>
+</html>
