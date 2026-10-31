@@ -33,7 +33,40 @@ section{padding:40px 0}h2{font-size:clamp(32px,4vw,52px);line-height:1.1;margin:
 footer{padding:32px 0 40px;text-align:center;font:13px/1.7 system-ui,sans-serif;color:#7a6a5e}.reveal{opacity:0;transform:translateY(12px);transition:opacity .55s,transform .55s}.reveal.in{opacity:1;transform:none}
 @media(max-width:768px){.hero,.strip,.visit{grid-template-columns:1fr}.hero img{height:300px}.mags{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-</style></head><body>
+</style>
+<style>
+/* ULTRA-PREMIUM POLISH 2026-10-31 - palette untouched; container, spacing, motion only */
+html,body{overflow-x:hidden}
+.wrap{max-width:1200px!important;margin-inline:auto!important;padding-left:40px!important;padding-right:40px!important}
+.section{max-width:1200px!important;margin-inline:auto!important;padding-left:40px!important;padding-right:40px!important}
+@media(min-width:1440px){.wrap,.section,.pz-section{max-width:1320px!important}}
+@media(max-width:1024px){.wrap,.section{padding-left:28px!important;padding-right:28px!important}}
+@media(max-width:768px){.wrap,.section{padding-left:20px!important;padding-right:20px!important}}
+@media(max-width:480px){.wrap,.section{padding-left:16px!important;padding-right:16px!important}}
+body{line-height:1.6}
+h1{line-height:1.08}
+h2{line-height:1.1}
+h2+p,h2+.sub,h2+.sec-note{margin-top:16px}
+.pz-section{max-width:1200px;margin-inline:auto;padding:96px 40px}
+.pz-section h2{margin:0 0 16px}
+.pz-sub{margin:0 0 32px;max-width:60ch}
+.pz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pz-grid figure{margin:0}
+.pz-grid img,.pz-story img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;display:block}
+.pz-story img{aspect-ratio:16/9}
+.pz-cap{font-size:13px;opacity:.75;padding-top:8px}
+.pz-why{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pz-why>div{padding:24px 24px 8px;border-top:3px solid currentColor}
+.pz-why h3{margin:0 0 8px}
+.pz-cta{text-align:center}
+.pz-cta .pz-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+@media(max-width:1024px){.pz-section{padding:72px 28px}}
+@media(max-width:768px){.pz-section{padding:56px 20px}.pz-grid,.pz-why{grid-template-columns:1fr}}
+@media(max-width:480px){.pz-section{padding:44px 16px}}
+.reveal{transition:opacity .6s ease,transform .6s ease}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none!important}html{scroll-behavior:auto!important}}
+</style>
+</head><body>
 <div class="topbar">Website concept demo — not the official website</div>
 <div class="wrap"><header><div class="logo">Intown <span>Donutz</span> &amp; Boba Tea</div><nav><a href="#menu">Menu</a><a href="#visit">Visit</a><a href="tel:+13363313414">Call</a></nav></header>
 <main>
@@ -53,7 +86,7 @@ footer{padding:32px 0 40px;text-align:center;font:13px/1.7 system-ui,sans-serif;
 <article><h3>Maple Bacon</h3><p>Maple bacon donuts appear among the shop's wider variety of flavours visitors mention.</p></article>
 <article><h3>Boba, Coffee &amp; Smoothies</h3><p>Boba tea — honeydew is a visitor-mentioned flavour — plus custom coffee drinks and smoothies.</p></article>
 </div></section>
-<section><div class="strip"><figure style="margin:0"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=1600&amp;q=80" alt="Donuts with toppings, illustrative stock photo"><div class="cap">Photos shown are illustrative stock images, not photos of this business.</div></figure>
+<section><div class="strip"><figure style="margin:0"><img src="https://images.unsplash.com/photo-1551106652-a5bcf4b29ab6?w=1600&amp;q=80" alt="Stacked donuts with chocolate, frosting and sprinkles, illustrative stock photo"><div class="cap">Photos shown are illustrative stock images, not photos of this business.</div></figure>
 <figure style="margin:0"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&amp;q=80" alt="Coffee, illustrative stock photo"><div class="cap">Photos shown are illustrative stock images, not photos of this business.</div></figure></div></section>
 <section id="visit" class="reveal"><h2>Visit</h2><div class="visit"><div>
 <p><strong>Address</strong><br>167 Jonestown Road, Winston-Salem, NC 27104</p>
@@ -62,7 +95,12 @@ footer{padding:32px 0 40px;text-align:center;font:13px/1.7 system-ui,sans-serif;
 <p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Intown%20Donutz%20167%20Jonestown%20Road%2C%20Winston-Salem%2C%20NC%2027104">Open in Google Maps</a></p></div>
 <div><p><strong>Hours (as listed)</strong><br>Monday – Saturday: 7:00 AM – 7:00 PM<br>Sunday: 7:00 AM – 2:00 PM</p>
 <div class="note"><strong>Please note:</strong> A delivery listing shows a different phone number and shorter pickup hours, so the number and hours above — which agree across the shop's directory listings — should be confirmed by phone before a special trip.</div></div></div></section>
-</main><footer><p><strong>Intown Donutz &amp; Boba Tea</strong> · 167 Jonestown Rd, Winston-Salem, NC 27104 · <a href="tel:+13363313414">(336) 331-3414</a></p>
+</main><section class="pz-section pz-story reveal"><h2>A closer look</h2><p class="pz-sub">Photos shown are illustrative stock images, not photos of this business.</p><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Cafe interior, illustrative stock photo" loading="lazy"><p class="pz-cap">Photos shown are illustrative stock images, not photos of this business.</p></section>
+<section class="pz-section reveal"><h2>Gallery</h2><p class="pz-sub">Illustrative stock photos, not photos of this business.</p><div class="pz-grid"><figure><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Cafe interior, illustrative stock photo" loading="lazy"><figcaption class="pz-cap">Cafe interior, illustrative stock photo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Restaurant interior, illustrative stock photo" loading="lazy"><figcaption class="pz-cap">Restaurant interior, illustrative stock photo</figcaption></figure></div></section>
+<section class="pz-section reveal"><h2>Why this page works</h2><p class="pz-sub">What this concept demo is designed to do for a visitor - no business claims, just the page itself.</p><div class="pz-why"><div><h3>Menu first</h3><p>The dishes visitors mention are up front, so you can decide what to order before you call.</p></div><div><h3>Visit in one tap</h3><p>Address, phone and directions sit together on one page - no hunting through directory listings.</p></div><div><h3>Call to confirm</h3><p>Hours and today's options can change, so this concept points you to a quick call before you head out.</p></div></div></section>
+<section class="pz-section pz-cta reveal"><h2>Ready when you are</h2><p class="pz-sub" style="margin-inline:auto">Call or get directions - and a quick call before you head out confirms today's hours and options.</p><div class="pz-btns"><a class="btn" href="tel:+13363313414">Call (336) 331-3414</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Intown%20Donutz%20167%20Jonestown%20Road%2C%20Winston-Salem%2C%20NC%2027104">Get directions</a></div><p class="pz-cap">Photos shown are illustrative stock images, not photos of this business.</p></section>
+<footer><p><strong>Intown Donutz &amp; Boba Tea</strong> · 167 Jonestown Rd, Winston-Salem, NC 27104 · <a href="tel:+13363313414">(336) 331-3414</a></p>
 <p>Website concept demo — not the official website. Photos shown are illustrative stock images, not photos of this business.</p></footer></div>
 <script>var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});</script>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </body></html>
