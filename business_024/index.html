@@ -28,6 +28,39 @@ section{padding:64px 0}footer{background:#111;color:#eee;padding:32px 24px;text-
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 @media(max-width:768px){.split{grid-template-columns:1fr}.split .txt{padding:32px 24px}.split img{height:300px}.cols{grid-template-columns:1fr}}
 </style>
+
+<style>
+/* ULTRA-PREMIUM POLISH 2026-10-31 - palette untouched; container, spacing, motion only */
+html,body{overflow-x:hidden}
+.wrap{max-width:1200px!important;margin-inline:auto!important;padding-left:40px!important;padding-right:40px!important}
+.section{max-width:1200px!important;margin-inline:auto!important;padding-left:40px!important;padding-right:40px!important}
+@media(min-width:1440px){.wrap,.section,.pz-section{max-width:1320px!important}}
+@media(max-width:1024px){.wrap,.section{padding-left:28px!important;padding-right:28px!important}}
+@media(max-width:768px){.wrap,.section{padding-left:20px!important;padding-right:20px!important}}
+@media(max-width:480px){.wrap,.section{padding-left:16px!important;padding-right:16px!important}}
+body{line-height:1.6}
+h1{line-height:1.08}
+h2{line-height:1.1}
+h2+p,h2+.sub,h2+.sec-note{margin-top:16px}
+.pz-section{max-width:1200px;margin-inline:auto;padding:96px 40px}
+.pz-section h2{margin:0 0 16px}
+.pz-sub{margin:0 0 32px;max-width:60ch}
+.pz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pz-grid figure{margin:0}
+.pz-grid img,.pz-story img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;display:block}
+.pz-story img{aspect-ratio:16/9}
+.pz-cap{font-size:13px;opacity:.75;padding-top:8px}
+.pz-why{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pz-why>div{padding:24px 24px 8px;border-top:3px solid currentColor}
+.pz-why h3{margin:0 0 8px}
+.pz-cta{text-align:center}
+.pz-cta .pz-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+@media(max-width:1024px){.pz-section{padding:72px 28px}}
+@media(max-width:768px){.pz-section{padding:56px 20px}.pz-grid,.pz-why{grid-template-columns:1fr}}
+@media(max-width:480px){.pz-section{padding:44px 16px}}
+.reveal{transition:opacity .6s ease,transform .6s ease}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none!important}html{scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
 <div class="topbar">Website concept demo — not the official website</div>
@@ -47,9 +80,14 @@ section{padding:64px 0}footer{background:#111;color:#eee;padding:32px 24px;text-
 <p>Hours as listed by ThreeBestRated and corroborated by a second directory listing.</p>
 <p><a class="btn ghost" href="https://www.facebook.com/saigonsubsandrolls">Find Saigon Subs and Rolls on Facebook</a></p></section>
 
+<section class="pz-section pz-story reveal"><h2>A closer look</h2><p class="pz-sub">Photos shown are illustrative stock images, not photos of this business.</p><img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Noodle soup, illustrative stock photo" loading="lazy"><p class="pz-cap">Photos shown are illustrative stock images, not photos of this business.</p></section>
+<section class="pz-section reveal"><h2>Gallery</h2><p class="pz-sub">Illustrative stock photos, not photos of this business.</p><div class="pz-grid"><figure><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Noodle bowl, illustrative stock photo" loading="lazy"><figcaption class="pz-cap">Noodle bowl, illustrative stock photo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Noodle soup, illustrative stock photo" loading="lazy"><figcaption class="pz-cap">Noodle soup, illustrative stock photo</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&amp;q=80&amp;auto=format&amp;fit=crop" alt="Restaurant interior, illustrative stock photo" loading="lazy"><figcaption class="pz-cap">Restaurant interior, illustrative stock photo</figcaption></figure></div></section>
+<section class="pz-section reveal"><h2>Why this page works</h2><p class="pz-sub">What this concept demo is designed to do for a visitor - no business claims, just the page itself.</p><div class="pz-why"><div><h3>Menu first</h3><p>The dishes visitors mention are up front, so you can decide what to order before you call.</p></div><div><h3>Visit in one tap</h3><p>Address, phone and directions sit together on one page - no hunting through directory listings.</p></div><div><h3>Call to confirm</h3><p>Hours and today's options can change, so this concept points you to a quick call before you head out.</p></div></div></section>
+<section class="pz-section pz-cta reveal"><h2>Ready when you are</h2><p class="pz-sub" style="margin-inline:auto">Call or get directions - and a quick call before you head out confirms today's hours and options.</p><div class="pz-btns"><a class="btn" href="tel:+15133817827">Call (513) 381-7827</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Saigon+Subs+and+Rolls+151+West+4th+Street+Cincinnati+OH+45202">Get directions</a></div><p class="pz-cap">Photos shown are illustrative stock images, not photos of this business.</p></section>
 <footer><p>Website concept demo — not the official website</p><p>Photos shown are illustrative stock images, not photos of this business.</p></footer>
 <script>
 (function(){var els=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})})();
 </script>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </body>
 </html>
